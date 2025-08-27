@@ -227,8 +227,8 @@ section {
 /* Cards grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .col-4 {
@@ -448,30 +448,4 @@ footer {
 
 .fab button:hover {
   transform: translateY(-1px);
-}
-.modal {
-  position: fixed;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  max-width: 500px;
-  width: 90%;
-  border-radius: 8px;
-  position: relative;
-}
-
-.modal-content .close {
-  position: absolute;
-  top:10px;
-  right:15px;
-  font-size: 24px;
-  cursor: pointer;
 }
